@@ -1,0 +1,38 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    cursor: pointer;
+}
+
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #555;
+}
+
+    .cell:nth-child(2n) {
+        background: lightgray;
+        filter: brightness(90%);
+    }
+
+    .cell:nth-child(2n+1) {
+        background: lightgray;
+    }
